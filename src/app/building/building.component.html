@@ -1,0 +1,5 @@
+<h1>{{myBuildings.name}}</h1>
+<p *ngIf="myBuildings.name == Casino">Earn up to or Lose up to 100 Gold</p>
+<p *ngIf="myBuildings.name != Casino">Earns {{myBuildings.min}}-{{myBuildings.max}} Gold</p>
+
+<button (click) = "onClick(myBuildings)">{{myBuildings.name}}!</button>
